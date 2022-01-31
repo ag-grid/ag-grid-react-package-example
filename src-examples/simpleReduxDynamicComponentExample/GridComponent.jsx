@@ -18,7 +18,7 @@ class GridComponent extends Component {
                 {
                     field: 'price',
                     cellClass: 'align-right',
-                    cellRendererFramework: PriceRenderer
+                    cellRenderer: PriceRenderer
                 }
             ]
         };

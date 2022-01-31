@@ -214,7 +214,7 @@ export default class RichGridDeclarativeExample extends Component {
                                 resizable: true,
                                 sortable: true,
                                 filter: true,
-                                headerComponentFramework: SortableHeaderComponent,
+                                headerComponent: SortableHeaderComponent,
                                 headerComponentParams: {
                                     menuIcon: 'fa-bars'
                                 }
@@ -222,9 +222,9 @@ export default class RichGridDeclarativeExample extends Component {
                             <AgGridColumn headerName="#" width={40}
                                           checkboxSelection sortable={false} suppressMenu filter={false} pinned>
                             </AgGridColumn>
-                            <AgGridColumn headerName="Employee" headerGroupComponentFramework={HeaderGroupComponent}>
+                            <AgGridColumn headerName="Employee" headerGroupComponent={HeaderGroupComponent}>
                                 <AgGridColumn field="name" width={170}
-                                              cellEditorFramework={NameCellEditor}
+                                              cellEditor={NameCellEditor}
                                               enableRowGroup enablePivot pinned editable/>
                                 <AgGridColumn field="country" width={180}
                                               cellRenderer={RichGridDeclarativeExample.countryCellRenderer}
@@ -239,10 +239,10 @@ export default class RichGridDeclarativeExample extends Component {
                             </AgGridColumn>
                             <AgGridColumn headerName="IT Skills">
                                 <AgGridColumn field="skills" width={120} enableRowGroup enablePivot sortable={false}
-                                              cellRendererFramework={SkillsCellRenderer}
+                                              cellRenderer={SkillsCellRenderer}
                                               filterFramework={SkillsFilter}/>
                                 <AgGridColumn field="proficiency" width={210} enableValue
-                                              cellRendererFramework={ProficiencyCellRenderer}
+                                              cellRenderer={ProficiencyCellRenderer}
                                               filterFramework={ProficiencyFilter}/>
                             </AgGridColumn>
                             <AgGridColumn headerName="Contact">
