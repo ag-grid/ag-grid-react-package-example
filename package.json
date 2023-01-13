@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-react-package-example",
-  "version": "28.2.1",
+  "version": "29.0.0",
   "description": "Example Reach applicaiton using AG Grid.",
   "main": "dist/ag-grid-react-example.js",
   "scripts": {
@@ -62,9 +62,9 @@
     "webpack-dev-server": "3.11.2"
   },
   "dependencies": {
-    "ag-grid-community": "~28.2.1",
-    "ag-grid-enterprise": "~28.2.1",
-    "ag-grid-react": "~28.2.1",
+    "ag-grid-community": "~29.0.0",
+    "ag-grid-enterprise": "~29.0.0",
+    "ag-grid-react": "~29.0.0",
     "bootstrap": "4.5.0",
     "d3": "4.9.1",
     "lodash": "4.17.20",
