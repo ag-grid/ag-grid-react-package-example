@@ -15,6 +15,20 @@ import 'ag-grid-enterprise';
 
 import "./RichGridDeclarativeExample.css";
 
+const defaultColDef = {
+    resizable: true,
+    sortable: true,
+    filter: true,
+    headerComponent: SortableHeaderComponent,
+    headerComponentParams: {
+        menuIcon: 'fa-bars'
+    }
+};
+
+const components = {
+    agDateInput: DateComponent
+}
+
 export default class RichGridDeclarativeExample extends Component {
     constructor(props) {
         super(props);
@@ -284,20 +298,10 @@ export default class RichGridDeclarativeExample extends Component {
                             groupHeaders
 
                             // setting grid wide date component
-                            components={{
-                                agDateInput: DateComponent
-                            }}
+                            components={components}
 
                             // setting default column properties
-                            defaultColDef={{
-                                resizable: true,
-                                sortable: true,
-                                filter: true,
-                                headerComponent: SortableHeaderComponent,
-                                headerComponentParams: {
-                                    menuIcon: 'fa-bars'
-                                }
-                            }}
+                            defaultColDef={defaultColDef}
                         />
                     </div>
                 </div>
