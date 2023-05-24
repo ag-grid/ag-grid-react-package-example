@@ -45,11 +45,11 @@ class TopMoversGrid extends Component {
         this.onGridReady = this.onGridReady.bind(this);
 
         // grid callbacks
-        this.getRowNodeId = this.getRowNodeId.bind(this);
+        this.getRowId = this.getRowId.bind(this);
     }
 
-    getRowNodeId(data) {
-        return data.symbol;
+    getRowId(params) {
+        return params?.data?.symbol;
     }
 
     onGridReady(params) {
@@ -72,8 +72,7 @@ class TopMoversGrid extends Component {
                         filter: false
                     }}
                     animateRows
-                    immutableData
-                    getRowNodeId={this.getRowNodeId}
+                    getRowId={this.getRowId}
 
                     // events
                     onGridReady={this.onGridReady}>

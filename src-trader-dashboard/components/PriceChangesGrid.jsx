@@ -51,7 +51,7 @@ export default class extends Component {
         this.onSelectionChanged = this.onSelectionChanged.bind(this);
 
         // grid callbacks
-        this.getRowNodeId = this.getRowNodeId.bind(this);
+        this.getRowId = this.getRowId.bind(this);
 
         // component events
         this.updateSymbol = this.updateSymbol.bind(this);
@@ -79,8 +79,8 @@ export default class extends Component {
         this.gridApi.sizeColumnsToFit();
     }
 
-    getRowNodeId(data) {
-        return data.symbol;
+    getRowId({ data }) {
+        return data?.symbol;
     }
 
     onSelectionChanged() {
@@ -161,7 +161,7 @@ export default class extends Component {
                     rowSelection="single"
 
                     // callbacks
-                    getRowNodeId={this.getRowNodeId}
+                    getRowId={this.getRowId}
 
                     // events
                     onGridReady={this.onGridReady}

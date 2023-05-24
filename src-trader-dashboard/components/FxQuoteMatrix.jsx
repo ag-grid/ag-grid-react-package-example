@@ -15,7 +15,7 @@ class FxQuoteMatrix extends Component {
         this.onGridReady = this.onGridReady.bind(this);
 
         // grid callbacks
-        this.getRowNodeId = this.getRowNodeId.bind(this);
+        this.getRowId = this.getRowId.bind(this);
     }
 
     onGridReady(params) {
@@ -27,8 +27,8 @@ class FxQuoteMatrix extends Component {
         }
     }
 
-    getRowNodeId(data) {
-        return data.symbol;
+    getRowId({ data }) {
+        return data?.symbol;
     }
 
     componentWillReceiveProps(nextProps) {
@@ -69,7 +69,7 @@ class FxQuoteMatrix extends Component {
                     }}
 
                     // callbacks
-                    getRowNodeId={this.getRowNodeId}
+                    getRowId={this.getRowId}
 
                     // events
                     onGridReady={this.onGridReady}>
