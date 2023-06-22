@@ -165,8 +165,7 @@ export default class extends Component {
 
                     // events
                     onGridReady={this.onGridReady}
-                    onSelectionChanged={this.onSelectionChanged}>
-                </AgGridReact>
+                    onSelectionChanged={this.onSelectionChanged} />
             </div>
         );
     }

@@ -76,8 +76,7 @@ class TopMoversGrid extends Component {
                     getRowNodeId={this.getRowNodeId}
 
                     // events
-                    onGridReady={this.onGridReady}>
-                </AgGridReact>
+                    onGridReady={this.onGridReady} />
             </div>
         );
     }

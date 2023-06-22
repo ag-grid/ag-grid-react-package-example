@@ -44,8 +44,7 @@ class GridComponent extends Component {
                     rowData={this.props.rowData}
 
                     // events
-                    onGridReady={this.onGridReady}>
-                </AgGridReact>
+                    onGridReady={this.onGridReady} />
             </div>
         )
     }
