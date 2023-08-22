@@ -72,8 +72,7 @@ class FxQuoteMatrix extends Component {
                     getRowId={this.getRowId}
 
                     // events
-                    onGridReady={this.onGridReady}>
-                </AgGridReact>
+                    onGridReady={this.onGridReady} />
             </div>
         );
     }

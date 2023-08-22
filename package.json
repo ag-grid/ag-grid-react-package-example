@@ -1,6 +1,6 @@
 {
   "name": "ag-grid-react-package-example",
-  "version": "30.0.0",
+  "version": "30.1.0",
   "description": "Example Reach applicaiton using AG Grid.",
   "main": "dist/ag-grid-react-example.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "build-examples": "NODE_OPTIONS=--openssl-legacy-provider webpack --config config/webpack.config.examples.js --progress --profile --bail",
     "build-dashboard": "NODE_OPTIONS=--openssl-legacy-provider webpack --config config/webpack.config.trader.js --progress --profile --bail",
     "build-all": "npm run build-examples && npm run build-dashboard",
-    "package": "npm run clean && npm run mkdirs && npm run build-all && npm run copy && npm run hash",
+    "packagex": "npm run clean && npm run mkdirs && npm run build-all && npm run copy && npm run hash",
     "hash": "sh ./hashDirectory.sh > .hash",
     "start": "npm run examples",
     "test": "./ts-tests/runTsTests.sh"
@@ -62,9 +62,9 @@
     "webpack-dev-server": "3.11.2"
   },
   "dependencies": {
-    "ag-grid-community": "~30.0.0",
-    "ag-grid-enterprise": "~30.0.0",
-    "ag-grid-react": "~30.0.0",
+    "ag-grid-community": "~30.1.0",
+    "ag-grid-enterprise": "~30.1.0",
+    "ag-grid-react": "~30.1.0",
     "bootstrap": "4.5.0",
     "d3": "4.9.1",
     "lodash": "4.17.20",

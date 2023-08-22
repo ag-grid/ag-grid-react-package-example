@@ -25,8 +25,7 @@ export default function GridComponent() {
                 defaultColDef={{filter: true}}
 
                 // events
-                onGridReady={onGridReady}>
-            </AgGridReact>
+                onGridReady={onGridReady} />
         </div>
     )
 }
