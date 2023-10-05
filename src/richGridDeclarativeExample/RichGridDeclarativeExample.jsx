@@ -145,7 +145,6 @@ export default class RichGridDeclarativeExample extends Component {
     /* Grid Events we're listening to */
     onGridReady = (params) => {
         this.api = params.api;
-        this.columnApi = params.columnApi;
 
         this.api.sizeColumnsToFit();
 
@@ -235,10 +234,10 @@ export default class RichGridDeclarativeExample extends Component {
                         <span style={{float: "right"}}>
                             Column API:
                             <button onClick={() => {
-                                this.columnApi.setColumnVisible('country', false);
+                                this.api.setColumnVisible('country', false);
                             }} className="btn btn-primary">Hide Country Column</button>
                             <button onClick={() => {
-                                this.columnApi.setColumnVisible('country', true);
+                                this.api.setColumnVisible('country', true);
                             }} className="btn btn-primary">Show Country Column</button>
                         </span>
                     </div>
